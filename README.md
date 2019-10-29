@@ -43,3 +43,14 @@ services:
       - TERM=xterm
 
 ```
+### OJS installation instructions 
+```
+Select MySQLi as your Database Driver
+host: mariadb
+user: ojs
+password: ojs
+database name: ojs
+
+Uncheck "Create new database" checkbox
+
+```
