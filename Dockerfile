@@ -1,5 +1,6 @@
 FROM hacklab/php:7.3-apache
 
+COPY entrypoint.sh /
 
 RUN a2enmod rewrite expires
 # install the PHP extensions we need
