@@ -24,8 +24,8 @@ fi
 
 # Ajust database config
 
-if [[ $OJS_DB_HOST != mariadb ]]; then
-   sed -i 's/host = mariadb/host = '$OJS_DB_HOST'/' /var/www/html/config.inc.php
+if [[ $OJS_DB_HOST != localhost ]]; then
+   sed -i 's/host = localhost/host = '$OJS_DB_HOST'/' /var/www/html/config.inc.php
 fi
 
 if [[ $OJS_DB_USER != ojs ]]; then

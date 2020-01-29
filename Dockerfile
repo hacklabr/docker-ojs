@@ -1,7 +1,5 @@
 FROM hacklab/php:7.3-apache
 
-COPY entrypoint.sh /
-
 RUN a2enmod rewrite expires
 # install the PHP extensions we need
 RUN apt-get -qqy update \
@@ -100,3 +98,5 @@ RUN mkdir /var/www/files \
 
 
 RUN chown www-data:www-data /var/www/html/plugins
+
+COPY entrypoint.sh /
